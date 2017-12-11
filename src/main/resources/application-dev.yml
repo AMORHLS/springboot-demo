@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: com.hls.RoadApplication
+server:
+  port: 8080

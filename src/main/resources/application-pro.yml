@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: com.hls.RoadApplication
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+    database: mysql
+    hibernate:
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      ddl-auto: update #自动创建表（create每次启动重新创建，清空数据）
+server:
+  port: 8090
