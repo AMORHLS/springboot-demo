@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: RoadApplication
+server:
+  port: 8090
