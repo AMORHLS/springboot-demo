@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
  * @Package: com.hls.aspect
  * @Author: helishi
  * @CreateDate: 2017/12/8
- * @Description:使用@Aspect来声明这是一个切面，使用@Pointcut来定义切面所需要切入的位置，
+ * @Description: 使用@Aspect来声明这是一个切面，使用@Pointcut来定义切面所需要切入的位置，
  * 这里我们是对每一个HTTP请求都需要切入，在进入方法之前我们使用@Before记录了调用的接口URL，
  * 调用的方法，调用方的IP地址以及输入的参数等。在整个接口代码运作期间，我们使用@Around来捕获异常信息，
  * 并用之前定义好的Result进行异常的返回，最后我们使用@AfterReturning来记录我们的出參

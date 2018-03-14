@@ -46,7 +46,7 @@ public class LoginController {
         try {
             user = userService.login(username,password);
         } catch (Exception e) {
-            //这里不要使用e.printStackTrace() 否则会交个jvm处理了
+            //这里不要使用e.printStackTrace() 否则会交jvm处理了
             result = exceptionHandle.exceptionGet(e);
         }
             model.addAttribute("username",user == null?"no user":user.getName() );
